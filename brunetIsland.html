@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Brunet Island</title>
+	<link rel="stylesheet" type="text/css" href="css/capstone.css">
+	<script src="https://kit.fontawesome.com/a15ba4d407.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Brunet Island State Park</h1>
+
+			<div class="navbar">
+
+				<a href="index.html">Home</a>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Parks
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="amniconFalls.html">Amnicon Falls</a>
+						<a href="brunetIsland.html">Brunet Island</a>
+						<a href="buckhorn.html">Buckhorn</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Trails
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="tomorrowRiver.html">Tomorrow River</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Wildlife Areas
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="sandhill.html">Sandhill</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="intro">
+			<h2>Park Description</h2>
+
+			<p><a href="https://dnr.wisconsin.gov/topic/parks/brunetisland">Brunet Island State Park</a> is located north of Chippewa Falls on and around the Chippewa River. On the island there are hiking trails, a boat landing, beach, shelter, playground, and ball field. The section of the park off the island along the river has a hiking/skiing trail.</p>
+
+			<p>I spent all of my time at the park on the island. The Pine and Timber trails go through the woods in the middle of the island connecting the boat landing, beach/shelter, and camping areas. My wildlife sightings incuded deer, squirrels, and chipmunks. On my way back to the parking lot, there was a small buck standing in the trail.</p>
+
+			<p>The Jean Brunet Nature Trail is a loop at the north end of the island. It follows along the shore offering beautiful views of the river and fall colors.</p>
+
+			<p>Leaving from the boat landing, I followed the Spruce Trail along the shoreline. The trail took me to the ball field (a grass field with a backstop and bench), playground, and eventually back to the beach.</p>
+		</div>
+
+		<div class="gallery">
+			<h2>Pictures</h2>
+
+			<div id="thumb">
+				<div class="pics">
+					<img src="images/brunet/brunetisland01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Boat landing">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Deer in woods pic 1">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Deer in woods pic 2">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="Timber trail">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland05.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="Fall colors">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland06.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="Shelter house">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland07.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="Geese at the beach">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland08.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="Geese flying away">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland09.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt="Shelter house pic 2">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt="Buck blocking the trail">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt="Fall colors on the water pic 1">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland13.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt="Fall colors on the water pic 2">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland14.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" alt="Chippewa River">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland15.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor" alt="Spruce trail">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland16.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor" alt="Drinking fountain">
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 15</div>
+					<img src="images/brunet/brunetisland01.jpg" alt="Boat landing">
+					<div class="caption">
+						<p>Boat landing</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 15</div>
+					<img src="images/brunet/brunetisland02.jpg" alt="Deer in woods">
+					<div class="caption">
+						<p>Deer off in the woods</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 15</div>
+					<img src="images/brunet/brunetisland03.jpg" alt="Little buck in the woods">
+					<div class="caption">
+						<p>Little buck in the woods</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 15</div>
+					<img src="images/brunet/brunetisland04.jpg" alt="Timber trail">
+					<div class="caption">
+						<p>Timber trail</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 16</div>
+					<img src="images/brunet/brunetisland05.jpg" alt="Fall colors">
+					<div class="caption">
+						<p>Fall colors</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 15</div>
+					<img src="images/brunet/brunetisland06.jpg" alt="Shelter house">
+					<div class="caption">
+						<p>Shelter house</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 15</div>
+					<img src="images/brunet/brunetisland07.jpg" alt="Geese at the beach">
+					<div class="caption">
+						<p>Geese at the beach</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 15</div>
+					<img src="images/brunet/brunetisland08.jpg" alt="Geese flying away">
+					<div class="caption">
+						<p>Geese flying away</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 15</div>
+					<img src="images/brunet/brunetisland09.jpg" alt="Shelter house pic 2">
+					<div class="caption">
+						<p>Another view of the shelter house</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">10 / 15</div>
+					<img src="images/brunet/brunetisland10.jpg" alt="Buck blocking the trail">
+					<div class="caption">
+						<p>Buck blocking the trail</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">11 / 15</div>
+					<img src="images/brunet/brunetisland11.jpg" alt="Fall colors along the river">
+					<div class="caption">
+						<p>Fall colors along the river</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">12 / 15</div>
+					<img src="images/brunet/brunetisland13.jpg" alt="Fall colors on the water">
+					<div class="caption">
+						<p>Fall colors on the water</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">13 / 15</div>
+					<img src="images/brunet/brunetisland14.jpg" alt="Chippewa River">
+					<div class="caption">
+						<p>Chippewa River</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">14 / 15</div>
+					<img src="images/brunet/brunetisland15.jpg" alt="Spruce trail">
+					<div class="caption">
+						<p>Spruce trail</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">15 / 15</div>
+					<img src="images/brunet/brunetisland16.jpg" alt="Drinking fountain">
+					<div class="caption">
+						<p>Drinking fountain</p>
+					</div>
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		Last updated: 12/19/20 <br>
+		Created by: Melissa Franson
+	</footer>
+
+	<script>
+		// Stacked nav, from w3schools.com
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		// Lightbox, from w3schools.com
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+		}
+			</script>
+
+</body>
+</html>

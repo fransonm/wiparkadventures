@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buckhorn</title>
+	<link rel="stylesheet" type="text/css" href="css/capstone.css">
+	<script src="https://kit.fontawesome.com/a15ba4d407.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Buckhorn State Park</h1>
+
+			<div class="navbar">
+
+				<a href="index.html">Home</a>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Parks
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="amniconFalls.html">Amnicon Falls</a>
+						<a href="brunetIsland.html">Brunet Island</a>
+						<a href="buckhorn.html">Buckhorn</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Trails
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="tomorrowRiver.html">Tomorrow River</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Wildlife Areas
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="sandhill.html">Sandhill</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="intro">
+			<h2>Park Description</h2>
+
+			<p><a href="https://dnr.wisconsin.gov/topic/parks/buckhorn">Buckhorn State Park</a> is in central Wisconsin on Castle Rock Lake on the Wisconsin River. There are many hiking trails and walk-in camping sites within the park.</p>
+
+			<p>During my visit to the park, I hiked only the Central Sands Natrue Trail. It is just under a mile and a half loop trail that can be accessed from the parking area labeled "access for sites #17-#19" or from Hunter Parking Lot A. There were many different kinds of flowers growing the prairie grass.</p>
+		</div>
+
+		<div class="gallery">
+			<h2>Pictures</h2>
+
+			<div id="thumb">
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor tall" alt="Yellow flowers">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor tall" alt="Pink flower">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor tall" alt="Dangling flowers pic 1">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor tall" alt="Dangling flowers pic 2">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn05.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor tall" alt="UDangling flowers pic 3">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn08.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor tall" alt="Trail">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn09.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor tall" alt="Purple flowers pic 1">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn10.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor tall" alt="Purple flowers pic 2">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn11.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor tall" alt="Purple flowers pic 3">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn12.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt="Purple flowers pic 4">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn14.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor tall" alt="Indian Paintbrushes">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn16.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor tall" alt="More purple flowers">
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 12</div>
+					<img src="images/buckhorn/buckhorn01.jpg" class="tall" alt="Yellow flowers">
+					<div class="caption">
+						<p>Yellow flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 12</div>
+					<img src="images/buckhorn/buckhorn02.jpg" class="tall" alt="Pink flower">
+					<div class="caption">
+						<p>Pink flower</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 12</div>
+					<img src="images/buckhorn/buckhorn03.jpg" class="tall" alt="Dangling flowers">
+					<div class="caption">
+						<p>Dangling flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 12</div>
+					<img src="images/buckhorn/buckhorn04.jpg" class="tall" alt="Dangling flowers close-up">
+					<div class="caption">
+						<p>Close-up of the dangling flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 12</div>
+					<img src="images/buckhorn/buckhorn05.jpg" class="tall" alt="More dangling flowers">
+					<div class="caption">
+						<p>More dangling flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 12</div>
+					<img src="images/buckhorn/buckhorn08.jpg" class="tall" alt="Trail">
+					<div class="caption">
+						<p>Trail</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 12</div>
+					<img src="images/buckhorn/buckhorn09.jpg" class="tall" alt="Purple flowers">
+					<div class="caption">
+						<p>Purple flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 12</div>
+					<img src="images/buckhorn/buckhorn10.jpg" class="tall" alt="Purple flowers close-up">
+					<div class="caption">
+						<p>Close-up of purple flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 12</div>
+					<img src="images/buckhorn/buckhorn11.jpg" class="tall" alt="Another close-up of the purple flowers">
+					<div class="caption">
+						<p>Another close-up of the purple flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">10 / 12</div>
+					<img src="images/buckhorn/buckhorn12.jpg" alt="More purple flowers">
+					<div class="caption">
+						<p>More purple flowers</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">11 / 12</div>
+					<img src="images/buckhorn/buckhorn14.jpg" class="tall" alt="Indian Paintbrushes">
+					<div class="caption">
+						<p>Indian Paintbrushes</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">12 / 12</div>
+					<img src="images/buckhorn/buckhorn16.jpg" class="tall" alt="Purple flowers again">
+					<div class="caption">
+						<p>Purple flowers again</p>
+					</div>
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		Last updated: 12/19/20 <br>
+		Created by: Melissa Franson
+	</footer>
+
+	<script>
+		// Stacked nav, from w3schools.com
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		// Lightbox, from w3schools.com
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+		}
+			</script>
+
+</body>
+</html>

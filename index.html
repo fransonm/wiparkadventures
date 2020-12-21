@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WI State Park Adventures</title>
+	<link rel="stylesheet" type="text/css" href="css/capstone.css">
+	<script src="https://kit.fontawesome.com/a15ba4d407.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>My Wisconsin State Park Adventures</h1>
+
+			<div class="navbar">
+
+				<a href="index.html">Home</a>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Parks
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="amniconFalls.html">Amnicon Falls</a>
+						<a href="brunetIsland.html">Brunet Island</a>
+						<a href="buckhorn.html">Buckhorn</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Trails
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="tomorrowRiver.html">Tomorrow River</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Wildlife Areas
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="sandhill.html">Sandhill</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="intro">
+			<h2>My Mission</h2>
+
+			<p>I am on a mission to visit all of the state parks in Wisconsin. I love spending time in the great outdoors and enjoying the beauty of nature. We are lucky to have many great outdoor areas open to public recreational use in Wisconsin, and I am bound and determined to see them all.</p>
+
+			<p>Wisconsin pubilc lands are grouped into categories depending on how they are is used and managed: parks, forests, wildlife areas, fisheries areas, natural areas, trails, and flowages</p>
+
+			<p>For now, I am starting with just three of these: parks, trails, and wildlife areas. I will be adding new pictures and information as I visit new areas.</p>
+		</div>
+
+		<div class="gallery">
+			<h2>Pictures</h2>
+
+			<div id="thumb">
+				<div class="pics">
+					<img src="images/amnicon/amniconfalls07.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Amnicon Falls State Park">
+				</div>
+				<div class="pics">
+					<img src="images/brunet/brunetisland11.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Brunet Island State Park">
+				</div>
+				<div class="pics">
+					<img src="images/buckhorn/buckhorn12.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Buckhorn State Park">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill01.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="Sandhill Wildlife Area">
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="images/amnicon/amniconfalls07.jpg" alt="Amnicon Falls State Park">
+					<div class="caption">
+						<p>Amnicon Falls State Park</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="images/brunet/brunetisland11.jpg" alt="Brunet Island State Park">
+					<div class="caption">
+						<p>Brunet Island State Park</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="images/buckhorn/buckhorn12.jpg" alt="Buckhorn State Park">
+					<div class="caption">
+						<p>Buckhorn State Park</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="images/sandhill/sandhill01.jpg" alt="Sandhill Wildlife Area">
+					<div class="caption">
+						<p>Sandhill Wildlife Area</p>
+					</div>
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		Last updated: 12/19/20 <br>
+		Created by: Melissa Franson
+	</footer>
+
+	<script>
+		// Stacked nav, from w3schools.com
+		// Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				}
+				else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+		// Lightbox, from w3schools.com
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}	
+	</script>
+
+</body>
+</html>

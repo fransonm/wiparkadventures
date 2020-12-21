@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sandhill</title>
+	<link rel="stylesheet" type="text/css" href="css/capstone.css">
+	<script src="https://kit.fontawesome.com/a15ba4d407.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Sandhill Wildlife Area</h1>
+
+			<div class="navbar">
+
+				<a href="index.html">Home</a>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Parks
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="amniconFalls.html">Amnicon Falls</a>
+						<a href="brunetIsland.html">Brunet Island</a>
+						<a href="buckhorn.html">Buckhorn</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Trails
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="tomorrowRiver.html">Tomorrow River</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Wildlife Areas
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="sandhill.html">Sandhill</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="intro">
+			<h2>Property Description</h2>
+
+			<p><a href="https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/sandhill">Sandhill</a> is a wildlife management area in central Wisconsin. The property is made up of sandy hills, marshes, flowages, and forests, and is home to many different kinds of animals. I have seen bison, white-tailed deer, coyote, sandhill cranes, swans, geese, ducks, song birds, butterflies, squirrels, chipmunks, porcupines, and, of course, mosquitoes and horse flies. The main features of the property are the Trumpeter Trail and three observational towers.</p>
+
+			<p>The <a href="https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/sandhill/trailtower.html">Trumpeter Trail</a> is a road open to automobile traffic during the summer and fall months. At the entrance to the trail, you can pick up a copy of the interpretive guide which points out features along the way. The road is about 15 miles, but does have a short-cut turnoff that is about 9 miles.</p>
+
+			<p>The first observational tower you will come across is the Bison Barrens Tower. Here you will find a turnoff to park on the left hand side of the road. (Warning: the mosquitoes/horse flies can be a nuisance) When you cross the road, there is a sign that lists the traditional "Native American uses of the bison." Past the sign is a narrow foot trail leading to the lookout tower. This tower looks out over the bison range. If you are lucky, you will be able to get a glimpse of the buffalo.</p>
+
+			<p>The second observational tower is the North Bluff Tower. To get to this tower, you will have a bit of a climb from the parking area to the summit of the bluff. The footing is not great and can be slippery if wet or covered with leaves. Once you reach the top of the bluff and climb the tower (climb at your own risk, the tower is old), you will be rewarded with beatiful panoramic views of the property and beyond. (Warning: the mosquitoes/horse flies are worse here, and they follow you all the way to the base of the tower)</p>
+
+			<p>The third and final observational tower is the Gallagher Marsh Tower. Park in the small parking lot by the foundation of the Gallagher homestead and follow the trail through the trees and across the road (this section is closed to public traffic). Cross the bridge and follow the trail to the tower. (Again: the mosquitoes/horse flies can be bad) Here you will get a good view of the marshes. I have seen swans and ducks swiming in the water here.</p>
+
+			<p>There are also some rugged hiking trails on the property, but I have never been on them. Unless you go early enough in the year, you will want bug spray. The mosquitoes and horse flies get pretty bad!</p>
+		</div>
+
+		<div class="gallery">
+			<h2>Pictures</h2>
+
+			<div id="thumb">
+				<div class="pics">
+					<img src="images/sandhill/sandhill01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Buffalo pasture">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Sign at Bison Barrens Tower">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="View from North Bluff Tower pic 1">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="View from North Bluff Tower pic 2">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill05.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="View from North Bluff Tower pic 3">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill06.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="View from North Bluff Tower pic 4">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill08.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="Trees">
+				</div>
+				<div class="pics">
+					<img src="images/sandhill/sandhill09.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor tall" alt="Sandhills at Sandhill">
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="images/sandhill/sandhill01.jpg" alt="Buffalo pasture">
+					<div class="caption">
+						<p>The bison range</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="images/sandhill/sandhill02.jpg" alt="Sign at Bison Barrens Tower">
+					<div class="caption">
+						<p>Sign at Bison Barrens Tower</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="images/sandhill/sandhill03.jpg" alt="View from North Bluff Tower pic 1">
+					<div class="caption">
+						<p>View from North Bluff Tower</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="images/sandhill/sandhill04.jpg" alt="View from North Bluff Tower pic 2">
+					<div class="caption">
+						<p>From the North Bluff Tower</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="images/sandhill/sandhill05.jpg" alt="View from North Bluff Tower pic 3">
+					<div class="caption">
+						<p>Another view from the North Bluff Tower</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="images/sandhill/sandhill06.jpg" alt="View from North Bluff Tower pic 4">
+					<div class="caption">
+						<p>From the North Bluff Tower again</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 8</div>
+					<img src="images/sandhill/sandhill08.jpg" alt="Trees">
+					<div class="caption">
+						<p>Trees</p>
+					</div>
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="images/sandhill/sandhill09.jpg" class="tall" alt="Sandhills at Sandhill">
+					<div class="caption">
+						<p>Sandhills at Sandhill</p>
+					</div>
+				</div>
+
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		Last updated: 12/19/20 <br>
+		Created by: Melissa Franson
+	</footer>
+
+	<script>
+		// Stacked nav, from w3schools.com
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		// Lightbox, from w3schools.com
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+		}
+			</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tomorrow River</title>
+	<link rel="stylesheet" type="text/css" href="css/capstone.css">
+	<script src="https://kit.fontawesome.com/a15ba4d407.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Tomorrow River State Trail</h1>
+
+			<div class="navbar">
+
+				<a href="index.html">Home</a>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Parks
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="amniconFalls.html">Amnicon Falls</a>
+						<a href="brunetIsland.html">Brunet Island</a>
+						<a href="buckhorn.html">Buckhorn</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Trails
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="tomorrowRiver.html">Tomorrow River</a>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button class="dropdown-btn">Wildlife Areas
+						<i class="fas fa-caret-down"></i>
+					</button>
+					<div class="dropdown-container">
+						<a href="sandhill.html">Sandhill</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="intro">
+			<h2>Trail Description</h2>
+
+			<p>The <a href="https://dnr.wisconsin.gov/topic/parks/tomorrow">Tomorrow River State Trail</a> is a well maintained hiking/biking trail built on a former railroad track in central Wisconsin. The trail, which is just under 30 miles in length, runs from Plover to Manawa. Dogs are welcome if on a leash. A horse trail runs mostly alongside the Tomorrow River Trail, with short sections where the two trails run together. There are multiple parking and picnic areas along the trail.</p>
+
+			<p>A state trail pass is required for bikers and horseback riders, but not necessary for those on foot (walkers, hikers, joggers).</p>
+
+			<p>The trail is not groomed during the winter, but is open for walking, biking, skiing, and snowshoeing. A trail pass is not required for any of these activities. The trail is also open to snowmobiles during the winter when conditions allow.</p>
+
+			<p>I have only walked the first few miles starting from the trail head in Plover. As you leave the city, you will walk in the sun past fields with occational stretches of trees providing shade.</p>
+
+			<div>Here are some other links:
+				<ul>
+					<li><a href="https://www.co.portage.wi.us/department/parks/tomorrow-river-trail">Portage County</a></li>
+					<li><a href="https://www.co.portage.wi.us/home/showpublisheddocument?id=245">Map</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		Last updated: 12/19/20 <br>
+		Created by: Melissa Franson
+	</footer>
+
+	<script>
+		// Stacked nav, from w3schools.com
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		// Lightbox, from w3schools.com
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+		}
+			</script>
+
+</body>
+</html>
